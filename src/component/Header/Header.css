@@ -1,0 +1,15 @@
+.navLink{
+    background-color: black;
+    
+   
+    
+}
+.nav{
+ display: inline-block;
+    padding: 20px 15px;
+    margin-left:10px ;
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+    font-size: 25px;
+}

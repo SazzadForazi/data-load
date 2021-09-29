@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Friend.css'
 
 const Friend = (props) => {
-    const { name, phone, website, address } = props.friend;
+    const { name, id, phone, website, address } = props.friend;
     // console.log(props.friend);
     const friendStyle = {
         border: '1px solid black',
@@ -12,8 +13,8 @@ const Friend = (props) => {
         borderRadious: '20px',
         color: "white"
 
-
     }
+    const url = `/friend/${id}`
     return (
         <div style={friendStyle}>
 
@@ -21,7 +22,7 @@ const Friend = (props) => {
             <p>Phone: {phone}</p>
             <p>Website: {website}</p>
             <p><small><i>Adress: {address.street}</i></small></p>
-
+            <Link to={url}>Visit Me</Link>
 
         </div>
     );
